@@ -256,13 +256,27 @@ p {
   color: var(--color-text-secondary);
 }
 
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: opacity 0.15s ease;
+@layer base {
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.15s ease, opacity 0.15s ease;
+  }
+
+  a:hover {
+    opacity: 0.75;
+  }
 }
 
-a:hover {
+/* Prose links (inside .prose or article) — underlined accent */
+.prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  opacity: 1;
+}
+
+.prose a:hover {
   opacity: 0.75;
 }
 

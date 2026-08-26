@@ -77,24 +77,24 @@
   --color-tag-bg: rgba(0, 0, 0, 0.06);
   --color-tag-text: #434345;
 
-  /* ── Accent (blue — primary docs accent) ── */
-  --color-accent: #2563eb;
-  --color-accent-muted: rgba(37, 99, 235, 0.1);
-  --color-accent-green: #16a34a;
-  --color-accent-yellow: #ca8a04;
-  --color-accent-red: #dc2626;
+  /* ── Accent (muted blue-gray — minimal, not electric) ── */
+  --color-accent: #4a7fa5;
+  --color-accent-muted: rgba(74, 127, 165, 0.1);
+  --color-accent-green: #3d7a5a;
+  --color-accent-yellow: #8a6d00;
+  --color-accent-red: #a83232;
 
   /* ── Code blocks ── */
   --color-code-bg: #f4f4f6;
   --color-code-border: #d8d8da;
 
   /* ── Callout / Note ── */
-  --color-callout-bg: rgba(37, 99, 235, 0.06);
-  --color-callout-border: rgba(37, 99, 235, 0.25);
+  --color-callout-bg: rgba(74, 127, 165, 0.05);
+  --color-callout-border: rgba(74, 127, 165, 0.2);
 
   /* ── Sidebar ── */
-  --color-sidebar-active-bg: rgba(37, 99, 235, 0.08);
-  --color-sidebar-active-text: #2563eb;
+  --color-sidebar-active-bg: rgba(74, 127, 165, 0.07);
+  --color-sidebar-active-text: #4a7fa5;
 
   /* ── Tables ── */
   --color-table-stripe: rgba(0, 0, 0, 0.025);
@@ -133,24 +133,24 @@
   --color-tag-bg: rgba(255, 255, 255, 0.08);
   --color-tag-text: #9c9c9d;
 
-  /* ── Accent (blue — brighter on dark) ── */
-  --color-accent: #57c1ff;
-  --color-accent-muted: rgba(87, 193, 255, 0.1);
-  --color-accent-green: #59d499;
-  --color-accent-yellow: #ffc533;
-  --color-accent-red: #ff6161;
+  /* ── Accent (muted blue-gray — minimal on dark) ── */
+  --color-accent: #7aaec8;
+  --color-accent-muted: rgba(122, 174, 200, 0.1);
+  --color-accent-green: #5aaa82;
+  --color-accent-yellow: #c8a84a;
+  --color-accent-red: #c87070;
 
   /* ── Code blocks ── */
   --color-code-bg: #111213;
   --color-code-border: #232425;
 
   /* ── Callout / Note ── */
-  --color-callout-bg: rgba(87, 193, 255, 0.07);
-  --color-callout-border: rgba(87, 193, 255, 0.25);
+  --color-callout-bg: rgba(122, 174, 200, 0.07);
+  --color-callout-border: rgba(122, 174, 200, 0.2);
 
   /* ── Sidebar ── */
-  --color-sidebar-active-bg: rgba(87, 193, 255, 0.1);
-  --color-sidebar-active-text: #57c1ff;
+  --color-sidebar-active-bg: rgba(122, 174, 200, 0.08);
+  --color-sidebar-active-text: #7aaec8;
 
   /* ── Tables ── */
   --color-table-stripe: rgba(255, 255, 255, 0.025);

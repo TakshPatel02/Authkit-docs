@@ -112,11 +112,11 @@
    ══════════════════════════════════════════════ */
 .dark {
   /* ── Surfaces ── */
-  --color-bg-primary: #0a0a0b;
-  --color-bg-secondary: #0f1011;
-  --color-bg-card: #0a0a0b;
-  --color-surface-elevated: #141516;
-  --color-surface-card: #181919;
+  --color-bg-primary: #111113;
+  --color-bg-secondary: #16171a;
+  --color-bg-card: #111113;
+  --color-surface-elevated: #1a1b1e;
+  --color-surface-card: #1e1f22;
 
   /* ── Text ── */
   --color-text-primary: #f4f4f6;

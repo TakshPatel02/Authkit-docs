@@ -24,6 +24,7 @@
   --color-border: var(--color-border);
   --color-border-strong: var(--color-border-strong);
   --color-border-soft: var(--color-border-soft);
+  --color-border-card: var(--color-border-card);
 
   --color-hover-bg: var(--color-hover-bg);
   --color-btn-bg: var(--color-btn-bg);
@@ -69,6 +70,7 @@
   --color-border: #d8d8da;
   --color-border-strong: rgba(0, 0, 0, 0.16);
   --color-border-soft: rgba(0, 0, 0, 0.08);
+  --color-border-card: #c0c0c2; /* darker than global border — for card outlines */
 
   /* ── Interactive ── */
   --color-hover-bg: rgba(0, 0, 0, 0.04);
@@ -125,6 +127,7 @@
   --color-border: #232425;
   --color-border-strong: rgba(255, 255, 255, 0.16);
   --color-border-soft: rgba(255, 255, 255, 0.08);
+  --color-border-card: #2e2f30; /* slightly lighter than global — card outline on dark bg */
 
   /* ── Interactive ── */
   --color-hover-bg: rgba(255, 255, 255, 0.05);

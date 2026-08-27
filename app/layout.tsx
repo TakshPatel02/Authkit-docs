@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cookies } from "next/headers";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   weight: ['400', '500', '600'],
@@ -38,7 +39,8 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider initialTheme={theme}>
           <Navbar />
-          {children}
+          <main className="flex-1">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

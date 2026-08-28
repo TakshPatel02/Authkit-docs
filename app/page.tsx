@@ -48,26 +48,26 @@ export default function Home() {
         </p>
 
         {/* Headline */}
-        <h1 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight leading-[1.15] text-text-primary mb-5 max-w-125">
+        <h1 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight leading-[1.15] text-text-primary mb-5">
           Auth you don't have to write again.
         </h1>
 
         {/* Subhead - split at the positioning line */}
-        <p className="text-[0.9375rem] text-text-secondary leading-[1.75] max-w-135 mb-3">
+        <p className="text-[0.9375rem] text-text-secondary leading-[1.75] mb-3">
           A CLI that scaffolds a production-ready Express + MongoDB auth backend -
           Basic, Role-Based, or OTP verification - in JavaScript or TypeScript.
           Fully tested, rate-limited, and structured to industry standards.
         </p>
-        <p className="text-[0.9375rem] font-medium text-text-primary leading-[1.75] max-w-135 mb-10">
+        <p className="text-[0.9375rem] font-medium text-text-primary leading-[1.75] mb-10">
           Not a wrapper. Not AI-generated on the spot. Code that's already been
           written, tested, and fixed once - so you don't have to do it again.
         </p>
 
         {/* Install command */}
-        <div className="flex items-center justify-between gap-4 bg-code-bg border border-code-border rounded-lg px-4 py-3 mb-8 max-w-130">
-          <code className="font-mono text-[0.8125rem] text-text-primary">
+        <div className="flex items-center justify-between gap-4 bg-code-bg border border-code-border rounded-lg px-4 py-3 mb-8">
+          <span className="font-mono text-[0.8125rem] text-text-primary">
             {INSTALL_CMD}
-          </code>
+          </span>
           <CopyButton text={INSTALL_CMD} />
         </div>
 

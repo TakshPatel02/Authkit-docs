@@ -54,6 +54,11 @@
    LIGHT MODE
    ══════════════════════════════════════════════ */
 :root {
+  /* ── Layout tokens ── */
+  --docs-header-height: 56px;
+  --sidebar-width: 220px;
+  --container-max-width: 760px;
+
   /* ── Surfaces ── */
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f7f7f8;

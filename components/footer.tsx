@@ -10,7 +10,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border mt-auto">
+    <footer className="relative z-10 bg-bg-primary border-t border-border mt-auto">
       <div className="container py-6 flex items-center justify-between gap-6 flex-wrap">
 
         {/* Left: copyright */}

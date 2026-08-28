@@ -100,10 +100,10 @@ export default function WhyPage() {
         <p className="font-mono text-xs text-text-muted tracking-widest uppercase mb-6">
           why authkit
         </p>
-        <h1 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight leading-[1.15] text-text-primary mb-5 max-w-120">
+        <h1 className="text-[1.875rem] md:text-[2.25rem] font-semibold tracking-tight leading-[1.15] text-text-primary mb-5">
           Why I built this, and why it works the way it does.
         </h1>
-        <p className="text-[0.9375rem] text-text-secondary leading-[1.75] max-w-135">
+        <p className="text-[0.9375rem] text-text-secondary leading-[1.75]">
           Six files. Honest answers about where AuthKit came from, what it doesn't try to be, and the decisions that shaped how it's built.
         </p>
       </div>
@@ -122,7 +122,7 @@ export default function WhyPage() {
                 {file.title}
               </h2>
               {/* Body paragraphs */}
-              <div className="flex flex-col gap-3 max-w-150">
+              <div className="flex flex-col gap-3">
                 {file.body.map((para, i) => (
                   <p key={i} className="text-[0.9375rem] text-text-secondary leading-[1.75]">
                     {para}
@@ -148,7 +148,7 @@ export default function WhyPage() {
 
         <div className="flex flex-col divide-y divide-border">
           {architecturePoints.map((point, i) => (
-            <div key={i} className="py-6 first:pt-0 last:pb-0 max-w-150">
+            <div key={i} className="py-6 first:pt-0 last:pb-0">
               <h3 className="text-[0.9375rem] font-medium text-text-primary mb-2.5 leading-snug">
                 {point.title}
               </h3>
@@ -172,7 +172,7 @@ export default function WhyPage() {
           Three reasons to use it.
         </h2>
 
-        <div className="flex flex-col gap-2 max-w-150">
+        <div className="flex flex-col gap-2">
           {tracks.map((track, i) => (
             <div
               key={i}
@@ -189,7 +189,7 @@ export default function WhyPage() {
         </div>
 
         {/* Closing line */}
-        <p className="text-sm text-text-muted mt-8 max-w-135 leading-relaxed">
+        <p className="text-sm text-text-muted mt-8 leading-relaxed">
           Same code an AI could write for you in five minutes - except this version is already tested, already fixed, and installs its own dependencies while it's at it. The value isn't the code. It's not having to verify it again.
         </p>
       </section>
@@ -202,7 +202,7 @@ export default function WhyPage() {
         <p className="font-mono text-xs text-text-muted tracking-widest uppercase mb-6">
           personal note
         </p>
-        <blockquote className="border-l-2 border-border-card pl-5 max-w-140">
+        <blockquote className="border-l-2 border-border-card pl-5">
           <p className="text-[0.9375rem] text-text-secondary leading-[1.75] italic">
             I got tired of writing the same 200 lines of auth boilerplate for every new project, then testing it all over again each time. AuthKit exists so I don't have to - and so whoever uses it can pick the strategy that actually matches what they're building instead of carrying code they don't need.
           </p>

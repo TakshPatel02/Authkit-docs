@@ -119,18 +119,24 @@ export default function TemplatesPage() {
             <thead className="text-text-secondary border-b border-border">
               <tr>
                 <th className="font-medium py-3 pr-3 text-left w-[40%]">Feature</th>
-                <th className="font-medium px-4 py-3 text-center w-[20%]">Basic</th>
-                <th className="font-medium px-4 py-3 text-center w-[20%]">Role-Based</th>
-                <th className="font-medium px-4 py-3 text-center w-[20%]">OTP</th>
+                <th className="font-medium px-4 py-3 w-[20%]">
+                  <div className="flex justify-center">Basic</div>
+                </th>
+                <th className="font-medium px-4 py-3 w-[20%]">
+                  <div className="flex justify-center">Role-Based</div>
+                </th>
+                <th className="font-medium px-4 py-3 w-[20%]">
+                  <div className="flex justify-center">OTP</div>
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
               {featureMatrix.map((row) => (
                 <tr key={row.feature} className="hover:bg-hover-bg transition-colors duration-150">
                   <td className="py-3.5 pr-4 text-text-secondary text-left">{row.feature}</td>
-                  <td className="px-4 py-3.5 text-center"><Check active={row.basic} /></td>
-                  <td className="px-4 py-3.5 text-center"><Check active={row.roleBased} /></td>
-                  <td className="px-4 py-3.5 text-center"><Check active={row.otp} /></td>
+                  <td className="px-4 py-3.5"><div className="flex justify-center"><Check active={row.basic} /></div></td>
+                  <td className="px-4 py-3.5"><div className="flex justify-center"><Check active={row.roleBased} /></div></td>
+                  <td className="px-4 py-3.5"><div className="flex justify-center"><Check active={row.otp} /></div></td>
                 </tr>
               ))}
             </tbody>

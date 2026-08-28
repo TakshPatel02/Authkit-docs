@@ -27,13 +27,10 @@ export default function DocsLayout({
 
       {/*
         Content — uses the exact same .container as the navbar.
-        Fixed height, independently scrollable.
-        Sidebar doesn't affect this at all since it's fixed/out of flow.
+        Normal page flow — browser handles scrolling (one scrollbar only).
+        Sidebar stays fixed via position:fixed above.
       */}
-      <div
-        className="container overflow-y-auto"
-        style={{ height: "calc(100vh - var(--docs-header-height))" }}
-      >
+      <div className="container">
         <div className="py-12">
           {children}
         </div>

@@ -1,4 +1,5 @@
 import DocsSidebar from "@/components/docs-sidebar";
+import MobileDocsSidebar from "@/components/mobile-docs-sidebar";
 
 export default function DocsLayout({
   children,
@@ -24,6 +25,9 @@ export default function DocsLayout({
       >
         <DocsSidebar />
       </aside>
+
+      {/* Mobile Sidebar */}
+      <MobileDocsSidebar />
 
       {/*
         Content — uses the exact same .container as the navbar.

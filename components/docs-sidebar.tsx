@@ -30,7 +30,7 @@ const navGroups = [
   },
 ];
 
-const DocsSidebar = () => {
+const DocsSidebar = ({ onLinkClick }: { onLinkClick?: () => void }) => {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
@@ -54,6 +54,7 @@ const DocsSidebar = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  onClick={onLinkClick}
                   className={`block text-sm px-2 py-1.5 rounded-md transition-colors duration-150 ${
                     isActive(link.href)
                       ? "font-medium text-accent"

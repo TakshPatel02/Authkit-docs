@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CopyButton from "@/components/copy-button";
+import { CodeBlock } from "@/components/code-block";
 
 export const metadata: Metadata = {
   title: "Quick Start - AuthKit Docs",
@@ -51,14 +52,14 @@ export default function DocsPage() {
         <p className="text-sm text-text-secondary leading-relaxed mb-3 pl-5.5">
           The CLI walks you through two prompts — language and auth strategy.
         </p>
-        <pre>{`? Choose your language:
+        <CodeBlock code={`? Choose your language:
   ● JavaScript
   ○ TypeScript
 
 ? Choose authentication strategy:
   ● Basic Auth (Email/Password + JWT + Refresh Token)
   ○ OTP Verification (Email OTP + Password Reset)
-  ○ Role-Based Auth (User & Admin RBAC)`}</pre>
+  ○ Role-Based Auth (User & Admin RBAC)`} />
       </div>
 
       {/* ── Step 03 — Configure env ── */}
@@ -70,12 +71,12 @@ export default function DocsPage() {
         <p className="text-sm text-text-secondary leading-relaxed mb-3 pl-5.5">
           Copy the example env file and fill in your MongoDB URL, JWT secrets, and (for OTP) your Gmail App Password.
         </p>
-        <pre>{`cd <project-name>
+        <CodeBlock code={`cd <project-name>
 
 cp .env.example .env          # macOS / Linux
 copy .env.example .env        # Windows
 
-# configure .env with your MongoDB URL and JWT secrets`}</pre>
+# configure .env with your MongoDB URL and JWT secrets`} />
       </div>
 
       {/* ── Step 04 — Run dev server ── */}

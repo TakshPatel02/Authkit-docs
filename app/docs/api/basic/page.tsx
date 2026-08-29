@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EndpointCard } from "@/components/endpoint-card";
+import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -38,7 +39,7 @@ export default function BasicApiPage() {
         auth="No"
         rateLimit="5/1hr (IP)"
       >
-        <pre className="mb-2">{`// Request
+        <CodeBlock className="mb-2" code={`// Request
 { 
  "name": "Jane Doe", 
  "email": "jane@example.com", 
@@ -52,7 +53,7 @@ export default function BasicApiPage() {
  "data": {
    "userId": "67b8f9e1234567890abcdef1"
  }
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard
@@ -62,7 +63,7 @@ export default function BasicApiPage() {
         auth="No"
         rateLimit="20/15m (IP) + 5/1hr (Email)"
       >
-        <pre className="mb-2">{`// Request
+        <CodeBlock className="mb-2" code={`// Request
 { 
  "email": "jane@example.com",
   "password": "Password123" 
@@ -75,7 +76,7 @@ export default function BasicApiPage() {
  "data": { 
   "accessToken": "eyJ..." 
  } 
-}`}</pre>
+}`} />
         <p className="text-[0.8125rem] text-text-muted italic mt-3">A secure HttpOnly refreshToken cookie is set automatically.</p>
       </EndpointCard>
 
@@ -86,14 +87,14 @@ export default function BasicApiPage() {
         auth="Cookie (refreshToken)"
         rateLimit="20/15m (IP)"
       >
-        <pre>{`// Response 200
+        <CodeBlock code={`// Response 200
 { 
  "success": true,
  "message": "Access token refreshed successfully.",
 "data": {
   "accessToken": "eyJ..."
  }
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard
@@ -103,11 +104,11 @@ export default function BasicApiPage() {
         auth="Cookie (refreshToken)"
         rateLimit="None"
       >
-        <pre>{`// Response 200
+        <CodeBlock code={`// Response 200
 {
  "success": true,
  "message": "Logout successful"
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard

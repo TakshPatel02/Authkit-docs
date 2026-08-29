@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FolderTree } from "lucide-react";
+import { CodeBlock } from "@/components/code-block";
 
 export const metadata: Metadata = {
   title: "Project Architecture - AuthKit Docs",
@@ -89,9 +90,7 @@ export default function ArchitecturePage() {
             JavaScript Structure
           </h2>
         </div>
-        <pre className="text-[0.8125rem] leading-[1.6] bg-code-bg border border-code-border p-5 rounded-xl overflow-x-auto text-text-primary">
-          {jsTree}
-        </pre>
+        <CodeBlock code={jsTree} />
       </div>
 
       {/* ── TypeScript Tree ── */}
@@ -102,9 +101,7 @@ export default function ArchitecturePage() {
             TypeScript Structure
           </h2>
         </div>
-        <pre className="text-[0.8125rem] leading-[1.6] bg-code-bg border border-code-border p-5 rounded-xl overflow-x-auto text-text-primary">
-          {tsTree}
-        </pre>
+        <CodeBlock code={tsTree} />
         <p className="text-[0.9375rem] text-text-secondary leading-relaxed mt-4">
           TypeScript scaffolding additionally includes a dedicated <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">types/</span> directory to hold shared interfaces and global type augmentations (like extending <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">Express.Request</span>).
         </p>

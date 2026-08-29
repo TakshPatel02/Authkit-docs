@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EndpointCard } from "@/components/endpoint-card";
+import { CodeBlock } from "@/components/code-block";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -38,7 +39,7 @@ export default function RoleBasedApiPage() {
         auth="No"
         middleware="registerLimiter"
       >
-        <pre className="mb-2">{`/ / Request
+        <CodeBlock className="mb-2" code={`// Request
 { 
  "name": "Admin User", 
  "email": "admin@example.com", 
@@ -54,7 +55,7 @@ export default function RoleBasedApiPage() {
  "data": { 
   "userId": "67b8fa98765432100fedcba2" 
  } 
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard
@@ -64,7 +65,7 @@ export default function RoleBasedApiPage() {
         auth="No"
         middleware="loginIpLimiter, loginEmailLimiter"
       >
-        <pre className="mb-2">{`// Request
+        <CodeBlock className="mb-2" code={`// Request
 {
  "email": "admin@example.com",
  "password": "AdminPassword123"
@@ -78,7 +79,7 @@ export default function RoleBasedApiPage() {
   "accessToken": "eyJ...",
   "role": "admin"
  }
-}`}</pre>
+}`} />
         <p className="text-[0.8125rem] text-text-muted italic mt-3">A secure HttpOnly refreshToken cookie is set automatically.</p>
       </EndpointCard>
 
@@ -89,7 +90,7 @@ export default function RoleBasedApiPage() {
         auth="Cookie (refreshToken)"
         middleware="refreshTokenLimiter"
       >
-        <pre>{`// Response 200
+        <CodeBlock code={`// Response 200
 {   
  "success": true,
  "message": "Access token refreshed successfully.",
@@ -97,7 +98,7 @@ export default function RoleBasedApiPage() {
   "accessToken": "eyJ...",
   "role": "admin"
  }
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard
@@ -107,11 +108,11 @@ export default function RoleBasedApiPage() {
         auth="Cookie (refreshToken)"
         middleware="None"
       >
-        <pre>{`// Response 200
+        <CodeBlock code={`// Response 200
 {
  "success": true, 
  "message": "Logout successful"
-}`}</pre>
+}`} />
       </EndpointCard>
 
       <EndpointCard
@@ -121,8 +122,8 @@ export default function RoleBasedApiPage() {
         auth="Bearer (Access Token)"
         middleware="authMiddleware, isAdmin"
       >
-        <pre className="mb-2">{`Authorization: Bearer <access_token>`}</pre>
-        <pre>{`// 200 OK
+        <CodeBlock className="mb-2" code={`Authorization: Bearer <access_token>`} />
+        <CodeBlock code={`// 200 OK
 {
  "success": true,
  "message": "Welcome, Admin!"
@@ -132,7 +133,7 @@ export default function RoleBasedApiPage() {
 {
  "success": false,
  "message": "Forbidden: Admins only"
-}`}</pre>
+}`} />
       </EndpointCard>
 
     </div>

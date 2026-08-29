@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CodeBlock } from "@/components/code-block";
 
 export const metadata: Metadata = {
   title: "Customization & Extending - AuthKit Docs",
@@ -47,9 +48,7 @@ export default function CustomizationPage() {
           To require authentication on any endpoint, import and apply the <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">authMiddleware</span>. 
           If successful, it securely attaches the decoded JWT payload directly to <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">req.user</span>.
         </p>
-        <pre className="text-[0.8125rem] leading-[1.6] bg-code-bg border border-code-border p-5 rounded-xl overflow-x-auto text-text-primary">
-          {protectRouteCode}
-        </pre>
+        <CodeBlock code={protectRouteCode} />
       </div>
 
       {/* ── Adding Role-Based Guards ── */}
@@ -61,9 +60,7 @@ export default function CustomizationPage() {
           If you generated a Role-Based template, you can chain the <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">isAdmin</span> guard immediately 
           after the <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">authMiddleware</span> to strictly restrict an endpoint to administrators only.
         </p>
-        <pre className="text-[0.8125rem] leading-[1.6] bg-code-bg border border-code-border p-5 rounded-xl overflow-x-auto text-text-primary">
-          {roleGuardCode}
-        </pre>
+        <CodeBlock code={roleGuardCode} />
       </div>
 
     </div>

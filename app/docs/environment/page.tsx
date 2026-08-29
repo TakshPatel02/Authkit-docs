@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CodeBlock } from "@/components/code-block";
 
 export const metadata: Metadata = {
   title: "Environment Variables - AuthKit Docs",
@@ -64,7 +65,7 @@ export default function EnvironmentPage() {
         <p className="text-[0.9375rem] text-text-secondary leading-[1.75] mb-4">
           Both the Basic and Role-Based templates require the exact same environment variables.
         </p>
-        <pre>{envBasic}</pre>
+        <CodeBlock code={envBasic} />
       </div>
 
       {/* ── OTP Verification ── */}
@@ -72,7 +73,7 @@ export default function EnvironmentPage() {
         <h2 className="text-[1rem] font-medium text-text-primary mb-4">
           OTP Verification
         </h2>
-        <pre className="mb-4">{envOtp}</pre>
+        <CodeBlock code={envOtp} className="mb-4" />
         
         {/* ── Gmail App Password Note ── */}
         <div className="py-3.5">

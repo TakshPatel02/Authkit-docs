@@ -22,9 +22,7 @@ export default function DocsPage() {
         Scaffold a production-ready Express + MongoDB auth backend in seconds.
         All dependencies install automatically — no global install needed.
       </p>
-
-      <hr className="divider mb-10" />
-
+      
       {/* ── Step 01 — Install ── */}
       <div className="mb-10">
         <div className="flex items-baseline gap-3 mb-2">

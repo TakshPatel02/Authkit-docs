@@ -134,9 +134,6 @@ export default function WhyPage() {
         </div>
       </section>
 
-      {/* ── Divider ── */}
-      <hr className="divider mb-14 md:mb-18" />
-
       {/* ── Architecture decisions ── */}
       <section className="mb-16 md:mb-20">
         <p className="font-mono text-xs text-text-muted tracking-widest uppercase mb-6">
@@ -159,9 +156,6 @@ export default function WhyPage() {
           ))}
         </div>
       </section>
-
-      {/* ── Divider ── */}
-      <hr className="divider mb-14 md:mb-18" />
 
       {/* ── Who it's for ── */}
       <section className="mb-16 md:mb-20">
@@ -193,9 +187,6 @@ export default function WhyPage() {
           Same code an AI could write for you in five minutes - except this version is already tested, already fixed, and installs its own dependencies while it's at it. The value isn't the code. It's not having to verify it again.
         </p>
       </section>
-
-      {/* ── Divider ── */}
-      <hr className="divider mb-14 md:mb-18" />
 
       {/* ── Personal note ── */}
       <section>

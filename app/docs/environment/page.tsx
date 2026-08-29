@@ -56,8 +56,6 @@ export default function EnvironmentPage() {
         All scaffolding creates an <span className="font-mono text-[0.8125rem] text-text-primary">.env.example</span> file automatically.
       </p>
 
-      <hr className="divider mb-10" />
-
       {/* ── Basic & Role-Based Auth ── */}
       <div className="mb-14">
         <h2 className="text-[1rem] font-medium text-text-primary mb-2">

@@ -67,8 +67,6 @@ export default function TemplatesPage() {
         your project's exact needs so you aren't carrying dead weight.
       </p>
 
-      <hr className="divider mb-10" />
-
       {/* ── Template Comparison ── */}
       <div className="mb-14">
         <h2 className="text-[1rem] font-medium text-text-primary mb-6">

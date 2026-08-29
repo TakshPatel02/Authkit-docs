@@ -52,8 +52,6 @@ export default function SecurityPage() {
         AuthKit is designed to be secure by default. Every template implements modern authentication best practices out of the box to keep your users safe.
       </p>
 
-      <hr className="divider mb-10" />
-
       <div className="flex flex-col divide-y divide-border">
         {features.map((f, idx) => {
           const Icon = f.icon;

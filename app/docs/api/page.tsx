@@ -40,8 +40,6 @@ export default function ApiHubPage() {
         Choose the authentication strategy below to view its specific endpoints.
       </p>
 
-      <hr className="divider mb-10" />
-
       {/* ── Navigation Cards ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {templates.map((t) => (

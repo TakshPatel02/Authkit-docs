@@ -31,8 +31,6 @@ export default function BasicApiPage() {
         All routes are prefixed with <span className="font-mono text-[0.8125rem] text-text-primary bg-code-bg border border-code-border px-1.5 py-0.5 rounded">/api/v1/users</span>.
       </p>
 
-      <hr className="divider mb-10" />
-
       <EndpointCard
         method="POST"
         endpoint="/register"

@@ -93,9 +93,6 @@ export default function Home() {
 
       </section>
 
-      {/* ── Divider ── */}
-      <hr className="divider mb-12 md:mb-16" />
-
       {/* ── Strategy rows ── */}
       <section>
 

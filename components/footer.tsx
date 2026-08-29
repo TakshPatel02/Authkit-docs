@@ -11,15 +11,15 @@ const footerLinks = [
 const Footer = () => {
   return (
     <footer className="relative z-10 bg-bg-primary border-t border-border mt-auto">
-      <div className="container py-6 flex items-center justify-between gap-6 flex-wrap">
+      <div className="container py-8 flex flex-col-reverse md:flex-row items-center justify-between gap-6">
 
         {/* Left: copyright */}
-        <p className="font-mono text-xs text-text-muted">
+        <p className="font-mono text-xs text-text-muted text-center md:text-left">
           © {new Date().getFullYear()} Taksh Patel · MIT License
         </p>
 
         {/* Right: links */}
-        <nav className="flex items-center gap-4">
+        <nav className="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-3">
           {footerLinks.map((link) => (
             <a
               key={link.label}

@@ -193,7 +193,7 @@ body {
 pre,
 code,
 kbd {
-  font-family: var(--font-mono) !important;
+  font-family: var(--font-mono), monospace !important;
 }
 
 /* ══════════════════════════════════════════════
@@ -453,7 +453,7 @@ button:active {
 }
 
 .font-mono {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono), monospace;
 }
 
 /* Text color aliases */

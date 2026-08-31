@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
     images: [
       {
-        url: "https://res.cloudinary.com/portfolioblog/image/upload/v1788193968/authkit-banner_dmfdle.webp",
+        url: "https://res.cloudinary.com/portfolioblog/image/upload/v1788195200/authkit-banner_dmfdl.webp",
         width: 1920,
         height: 1080,
         alt: "AuthKit Docs - Auth you don't have to write again",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AuthKit - Auth you don't have to write again",
     description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
-    images: ["https://res.cloudinary.com/portfolioblog/image/upload/v1788193968/authkit-banner_dmfdle.webp"],
+    images: ["https://res.cloudinary.com/portfolioblog/image/upload/v1788195200/authkit-banner_dmfdl.webp"],
     creator: "@TakshPatel02"
   },
   formatDetection: {

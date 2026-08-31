@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     default: "AuthKit Docs - Auth you don't have to write again",
     template: "%s | AuthKit Docs",
   },
+  verification: {
+    google: "AIsWa1z2o3nSgk262N0vfNRxoKKcRw1gV59jGxLiGds",
+  },
   description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
   keywords: [
     "authkit",

@@ -18,9 +18,65 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AuthKit - Express Auth Scaffolding CLI",
-  description:
-    "A CLI that scaffolds a production-ready Express + MongoDB auth backend. Basic, Role-Based, or OTP verification - in JavaScript or TypeScript.",
+  metadataBase: new URL("https://authkit-docs.vercel.app"),
+  title: {
+    default: "AuthKit Docs - Auth you don't have to write again",
+    template: "%s | AuthKit Docs",
+  },
+  description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
+  keywords: [
+    "authkit",
+    "express auth",
+    "nodejs authentication",
+    "jwt authentication",
+    "express boilerplate",
+    "mongodb auth",
+    "express rate limiting",
+    "otp verification",
+    "role based access control",
+    "rbac express",
+    "typescript express auth",
+    "create-express-authkit",
+    "auth scaffolding cli",
+    "refresh token rotation",
+  ],
+  authors: [
+    {
+      name: "Taksh Patel",
+      url: "https://takshpatel.vercel.app",
+    }
+  ],
+  creator: "Taksh Patel",
+  publisher: "Taksh Patel",
+  category: "Documentation",
+  openGraph: {
+    type: "website",
+    url: "https://authkit-docs.vercel.app",
+    siteName: "AuthKit Docs",
+    title: "AuthKit Docs",
+    description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/portfolioblog/image/upload/v1788193968/authkit-banner_dmfdle.webp",
+        width: 1920,
+        height: 1080,
+        alt: "AuthKit Docs - Auth you don't have to write again",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AuthKit - Auth you don't have to write again",
+    description: "A CLI that scaffolds a production-ready Express + MongoDB auth backend - Basic, Role-Based, or OTP verification - in JS or TS.",
+    images: ["https://res.cloudinary.com/portfolioblog/image/upload/v1788193968/authkit-banner_dmfdle.webp"],
+    creator: "@TakshPatel02"
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  referrer: "origin-when-cross-origin",
 };
 
 export default async function RootLayout({
